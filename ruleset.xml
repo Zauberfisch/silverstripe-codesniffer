@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset name="SilverStripe">
+	<rule ref="Generic.Classes.DuplicateClassName.Found">
+		<severity>10</severity>
+	</rule>
+	<rule ref="Generic.CodeAnalysis.EmptyStatement.NotAllowed">
+		<severity>8</severity>
+	</rule>
+	<rule ref="Generic.CodeAnalysis.EmptyStatement.NotAllowedWarning">
+		<severity>7</severity>
+	</rule>
+	<rule ref="Generic.CodeAnalysis.ForLoopShouldBeWhileLoop.CanSimplify">
+		<severity>7</severity>
+	</rule>
+	<rule ref="Generic.CodeAnalysis.ForLoopWithTestFunctionCall.NotAllowed">
+		<severity>8</severity>
+	</rule>
+	<rule ref="Generic.CodeAnalysis.JumbledIncrementer.Found">
+		<severity>8</severity>
+	</rule>
+	<rule ref="Generic.CodeAnalysis.UnconditionalIfStatement.Found">
+		<severity>8</severity>
+	</rule>
+	<rule ref="Generic.CodeAnalysis.UnnecessaryFinalModifier.Found">
+		<severity>7</severity>
+	</rule>
+	<rule ref="Generic.ControlStructures.InlineControlStructure.NotAllowed">
+		<severity>8</severity>
+	</rule>
+	<rule ref="Generic.ControlStructures.InlineControlStructure.Discouraged">
+		<severity>6</severity>
+	</rule>
+	<rule ref="Generic.Files.LineEndings.InvalidEOLChar">
+		<severity>7</severity>
+	</rule>
+	<rule ref="Generic.Files.LineEndings">
+		<properties>
+			<property name="eolChar" value="\n" />
+		</properties>
+	</rule>
+	<rule ref="Generic.Files.LineLength.TooLong">
+		<severity>7</severity>
+	</rule>
+	<rule ref="Generic.Files.LineLength">
+		<properties>
+			<property name="lineLimit" value="100"/>
+		</properties>
+	</rule>
+	<rule ref="Generic.Files.LineLength.MaxExceeded">
+		<severity>8</severity>
+	</rule>
+	<rule ref="Generic.Files.LineLength">
+		<properties>
+			<property name="absoluteLineLimit" value="120"/>
+		</properties>
+	</rule>
+	<rule ref="Generic.Formatting.DisallowMultipleStatements.SameLine">
+		<severity>8</severity>
+	</rule>
+	<rule ref="Generic.Functions.CallTimePassByReference.NotAllowed">
+		<severity>8</severity>
+	</rule>
+	<rule ref="Generic.Metrics.CyclomaticComplexity.MaxExceeded">
+		<severity>8</severity>
+	</rule>
+	<rule ref="Generic.Metrics.CyclomaticComplexity">
+		<properties>
+			<property name="absoluteComplexity" value="20" />
+		</properties>
+	</rule>
+	<rule ref="Generic.Metrics.CyclomaticComplexity.TooHigh">
+		<severity>7</severity>
+	</rule>
+	<rule ref="Generic.Metrics.CyclomaticComplexity">
+		<properties>
+			<property name="complexity" value="10" />
+		</properties>
+	</rule>
+	<rule ref="Generic.Metrics.NestingLevel.MaxExceeded">
+		<severity>8</severity>
+	</rule>
+	<rule ref="Generic.Metrics.NestingLevel">
+		<properties>
+			<property name="absoluteNestingLevel" value="10" />
+		</properties>
+	</rule>
+	<rule ref="Generic.Metrics.NestingLevel.TooHigh">
+		<severity>7</severity>
+	</rule>
+	<rule ref="Generic.Metrics.NestingLevel">
+		<properties>
+			<property name="nestingLevel" value="5" />
+		</properties>
+	</rule>
+	<rule ref="Generic.NamingConventions.ConstructorName.OldStyle">
+		<severity>8</severity>
+	</rule>
+	<rule ref="Generic.NamingConventions.ConstructorName.OldStyleCall">
+		<severity>6</severity>
+	</rule>
+	<rule ref="Generic.NamingConventions.UpperCaseConstantName.ClassConstantNotUpperCase">
+		<severity>6</severity>
+	</rule>
+	<rule ref="Generic.NamingConventions.UpperCaseConstantName.ConstantNotUpperCase">
+		<severity>8</severity>
+	</rule>
+	<rule ref="Generic.PHP.NoSilencedErrors.Forbidden">
+		<severity>8</severity>
+	</rule>
+	<rule ref="Generic.Strings.UnnecessaryStringConcat.Found">
+		<severity>8</severity>
+	</rule>
+	<rule ref="Generic.WhiteSpace.ScopeIndent">
+		<properties>
+			<property name="indent" value="4" />
+			<property name="exact" value="false" />
+		</properties>
+	</rule>
+	<rule ref="PEAR.Files.IncludingFile.BracketsNotRequired">
+		<severity>6</severity>
+	</rule>
+	<rule ref="PEAR.Files.IncludingFile.UseIncludeOnce">
+		<severity>8</severity>
+	</rule>
+	<rule ref="PEAR.Files.IncludingFile.UseInclude">
+		<severity>8</severity>
+	</rule>
+	<rule ref="PEAR.Files.IncludingFile.UseRequireOnce">
+		<severity>8</severity>
+	</rule>
+	<rule ref="PEAR.Files.IncludingFile.UseRequire">
+		<severity>8</severity>
+	</rule>
+	<rule ref="PEAR.Functions.ValidDefaultValue.NotAtEnd">
+		<severity>10</severity>
+	</rule>
+	<rule ref="Squiz.Classes.DuplicateProperty.Found">
+		<severity>9</severity>
+	</rule>
+	<rule ref="Squiz.Classes.SelfMemberReference.IncorrectCase">
+		<severity>6</severity>
+	</rule>
+	<rule ref="Squiz.Classes.SelfMemberReference.NotUsed">
+		<severity>7</severity>
+	</rule>
+	<rule ref="Squiz.Classes.SelfMemberReference.SpaceBefore">
+		<severity>6</severity>
+	</rule>
+	<rule ref="Squiz.Classes.SelfMemberReference.SpaceAfter">
+		<severity>6</severity>
+	</rule>
+	<rule ref="Squiz.Functions.FunctionDuplicateArgument.Found">
+		<severity>10</severity>
+	</rule>
+	<rule ref="Squiz.PHP.CommentedOutCode.Found">
+		<severity>8</severity>
+	</rule>
+	<rule ref="Squiz.PHP.NonExecutableCode.Unreachable">
+		<severity>8</severity>
+	</rule>
+	<rule ref="Squiz.PHP.NonExecutableCode.ReturnNotRequired">
+		<severity>8</severity>
+	</rule>
+	<rule ref="Squiz.Scope.MemberVarScope.Missing">
+		<severity>8</severity>
+	</rule>
+	<rule ref="Squiz.Scope.StaticThisUsage.Found">
+		<severity>10</severity>
+	</rule>
+	<!-- Make sure that braces are correctly placed -->
+	<rule ref="Generic.Functions.OpeningFunctionBraceKernighanRitchie" />
+	<!-- Make sure that class keywords are lowercase (extend, class etc. -->
+	<rule ref="Squiz.Classes.LowercaseClassKeywords"/>
+	<!-- Check that classes are using self instead of classname -->
+	<rule ref="Squiz.Classes.SelfMemberReference"/>
+	
+	<!-- Do not use short php start tags -->
+	<rule ref="Generic.PHP.DisallowShortOpenTag" />
+	 
+	<!-- Check for correct file encoding, utf-8 etc -->
+	<rule ref="Generic.Files.ByteOrderMark"/>
+	 
+	<!-- PHP constants should be in uppercase -->
+	<rule ref="Generic.NamingConventions.UpperCaseConstantName"/>
+	 
+	<!-- Checks that the file does not end with a closing tag. -->
+	<rule ref="Zend.Files.ClosingTag"/>
+	
+	<!-- There MUST NOT be more than one statement per line. -->
+	<rule ref="Generic.Formatting.DisallowMultipleStatements"/>
+	
+	<!-- The PHP constants true, false, and null MUST be in lower case. -->
+	<rule ref="Generic.PHP.LowerCaseConstant"/>
+	
+	<!-- Verifies that properties are declared correctly -->
+	<rule ref="PSR2.Classes.PropertyDeclaration"/>
+	
+	<!-- In the argument list, there MUST NOT be a space before each comma, and there MUST be one 
+	space after each comma. -->
+	<rule ref="Squiz.Functions.FunctionDeclarationArgumentSpacing">
+		<properties>
+			<property name="equalsSpacing" value="1"/>
+		</properties>
+	</rule>
+	
+	<!-- Method arguments with default values MUST go at the end of the argument list. -->
+	<rule ref="PEAR.Functions.ValidDefaultValue"/>
+	
+	<!-- Checks that calls to methods and functions are spaced correctly. -->
+	<rule ref="Generic.Functions.FunctionCallArgumentSpacing"/>
+	
+	 <!-- The general style rules for control structures are as follows:
+	There MUST be one space after the control structure keyword
+	There MUST NOT be a space after the opening parenthesis
+	There MUST NOT be a space before the closing parenthesis
+	There MUST be one space between the closing parenthesis and the opening brace
+	The structure body MUST be indented once
+	The closing brace MUST be on the next line after the body -->
+	<rule ref="Squiz.WhiteSpace.ScopeClosingBrace"/>
+	<rule ref="Squiz.ControlStructures.ForEachLoopDeclaration"/>
+	<rule ref="Squiz.ControlStructures.ForLoopDeclaration"/>
+	<rule ref="Squiz.ControlStructures.LowercaseDeclaration"/>
+
+	<!-- The body of each structure MUST be enclosed by braces. This standardizes how the structures
+	look, and reduces the likelihood of introducing errors as new lines get added to the body. -->
+	<rule ref="Generic.ControlStructures.InlineControlStructure"/>
+	
+	<!-- Do not allow 'else if' declarations -->
+	<rule ref="PSR2.ControlStructures.ElseIfDeclaration" />
+	
+	<!-- Checks that the method declaration is correct. -->
+	<rule ref="PSR2.Methods.MethodDeclaration" />
+	
+	<!-- Check that no methods are declared in a global scope -->
+	<rule ref="Squiz.Functions.GlobalFunction"/>	
+	
+	<!-- Warn for todos -->
+	<rule ref="Generic.Commenting.Todo"/>
+	<rule ref="Generic.Commenting.Fixme"/>
+</ruleset>
+
