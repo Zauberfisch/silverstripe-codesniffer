@@ -16,7 +16,7 @@ If it's not installed, the easiest way to install is via PEAR. Instructions here
 
 2) Checkout this project somewhere on your hardrive
 
-    git clone git@github.com:stojg/silverstripe-codesniffer.git
+    git clone git://github.com/stojg/silverstripe-codesniffer.git
 
 ## Running the codesniffer
 
