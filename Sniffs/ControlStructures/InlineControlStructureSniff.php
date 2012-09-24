@@ -84,15 +84,20 @@ class SilverStripe_Sniffs_ControlStructures_InlineControlStructureSniff implemen
 			return;
 		}
 
-		$closingParenthesis = $tokens[$stackPtr]['parenthesis_closer'];
+		// if the control structure have parenthesis, check from the ending one
+		if(isset($tokens[$stackPtr]['parenthesis_closer']) === true) {
+			$checkPosition = $tokens[$stackPtr]['parenthesis_closer'];
+		} else {
+			$checkPosition = $stackPtr;
+		}
 		
 
-		if($tokens[$closingParenthesis+1]['content'] === "\n") {
+		if($tokens[$checkPosition+1]['content'] === "\n") {
 			$this->markAsFailed($phpcsFile, $stackPtr, 'Inline control structures with newline before next statement are not allowed.');
 			return;
 		}
 
-		if($tokens[$closingParenthesis+2]['code'] === T_WHITESPACE) {
+		if($tokens[$checkPosition+2]['code'] === T_WHITESPACE) {
 			$this->markAsFailed($phpcsFile, $stackPtr, 'Inline control structures with newline before next statement are not allowed.');
 			return;
 
