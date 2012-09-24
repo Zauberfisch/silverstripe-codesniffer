@@ -24,12 +24,6 @@
 	<rule ref="Generic.CodeAnalysis.UnnecessaryFinalModifier.Found">
 		<severity>7</severity>
 	</rule>
-	<rule ref="Generic.ControlStructures.InlineControlStructure.NotAllowed">
-		<severity>8</severity>
-	</rule>
-	<rule ref="Generic.ControlStructures.InlineControlStructure.Discouraged">
-		<severity>6</severity>
-	</rule>
 	<rule ref="Generic.Files.LineEndings.InvalidEOLChar">
 		<severity>7</severity>
 	</rule>
@@ -221,10 +215,6 @@
 	<rule ref="Squiz.ControlStructures.ForLoopDeclaration"/>
 	<rule ref="Squiz.ControlStructures.LowercaseDeclaration"/>
 
-	<!-- The body of each structure MUST be enclosed by braces. This standardizes how the structures
-	look, and reduces the likelihood of introducing errors as new lines get added to the body. -->
-	<rule ref="Generic.ControlStructures.InlineControlStructure"/>
-	
 	<!-- Do not allow 'else if' declarations -->
 	<rule ref="PSR2.ControlStructures.ElseIfDeclaration" />
 	
