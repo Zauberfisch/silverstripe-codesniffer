@@ -108,12 +108,7 @@
 	<rule ref="Generic.Strings.UnnecessaryStringConcat.Found">
 		<severity>8</severity>
 	</rule>
-	<rule ref="Generic.WhiteSpace.ScopeIndent">
-		<properties>
-			<property name="indent" value="4" />
-			<property name="exact" value="false" />
-		</properties>
-	</rule>
+	
 	<rule ref="PEAR.Files.IncludingFile.BracketsNotRequired">
 		<severity>6</severity>
 	</rule>
