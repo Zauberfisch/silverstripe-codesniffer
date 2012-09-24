@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ruleset name="SilverStripe">
+
+	<exclude-pattern>*/thirdparty/*</exclude-pattern>
+	<exclude-pattern>Diff.php</exclude-pattern>
+
 	<rule ref="Generic.Classes.DuplicateClassName.Found">
 		<severity>10</severity>
 	</rule>
@@ -167,42 +171,42 @@
 	<rule ref="Squiz.Classes.LowercaseClassKeywords"/>
 	<!-- Check that classes are using self instead of classname -->
 	<rule ref="Squiz.Classes.SelfMemberReference"/>
-	
+
 	<!-- Do not use short php start tags -->
 	<rule ref="Generic.PHP.DisallowShortOpenTag" />
-	 
+
 	<!-- Check for correct file encoding, utf-8 etc -->
 	<rule ref="Generic.Files.ByteOrderMark"/>
-	 
+
 	<!-- PHP constants should be in uppercase -->
 	<rule ref="Generic.NamingConventions.UpperCaseConstantName"/>
-	 
+
 	<!-- Checks that the file does not end with a closing tag. -->
 	<rule ref="Zend.Files.ClosingTag"/>
-	
+
 	<!-- There MUST NOT be more than one statement per line. -->
 	<rule ref="Generic.Formatting.DisallowMultipleStatements"/>
-	
+
 	<!-- The PHP constants true, false, and null MUST be in lower case. -->
 	<rule ref="Generic.PHP.LowerCaseConstant"/>
-	
+
 	<!-- Verifies that properties are declared correctly -->
 	<rule ref="PSR2.Classes.PropertyDeclaration"/>
-	
-	<!-- In the argument list, there MUST NOT be a space before each comma, and there MUST be one 
+
+	<!-- In the argument list, there MUST NOT be a space before each comma, and there MUST be one
 	space after each comma. -->
 	<rule ref="Squiz.Functions.FunctionDeclarationArgumentSpacing">
 		<properties>
 			<property name="equalsSpacing" value="1"/>
 		</properties>
 	</rule>
-	
+
 	<!-- Method arguments with default values MUST go at the end of the argument list. -->
 	<rule ref="PEAR.Functions.ValidDefaultValue"/>
-	
+
 	<!-- Checks that calls to methods and functions are spaced correctly. -->
 	<rule ref="Generic.Functions.FunctionCallArgumentSpacing"/>
-	
+
 	 <!-- The general style rules for control structures are as follows:
 	There MUST be one space after the control structure keyword
 	There MUST NOT be a space after the opening parenthesis
@@ -217,13 +221,13 @@
 
 	<!-- Do not allow 'else if' declarations -->
 	<rule ref="PSR2.ControlStructures.ElseIfDeclaration" />
-	
+
 	<!-- Checks that the method declaration is correct. -->
 	<rule ref="PSR2.Methods.MethodDeclaration" />
-	
+
 	<!-- Check that no methods are declared in a global scope -->
-	<rule ref="Squiz.Functions.GlobalFunction"/>	
-	
+	<rule ref="Squiz.Functions.GlobalFunction"/>
+
 	<!-- Warn for todos -->
 	<rule ref="Generic.Commenting.Todo"/>
 	<rule ref="Generic.Commenting.Fixme"/>
