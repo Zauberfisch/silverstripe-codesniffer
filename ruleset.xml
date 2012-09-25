@@ -1,32 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ruleset name="SilverStripe">
+        <description>CodeSniffer ruleset for SilverStripe coding conventions.</description>
 
-	<exclude-pattern>*/thirdparty/*</exclude-pattern>
-	<exclude-pattern>Diff.php</exclude-pattern>
+        <!-- exclude minified CSS generated from SCSS -->
+        <exclude-pattern>admin/css/*</exclude-pattern>
+        <!-- exclude thirdparty content -->
+        <exclude-pattern>thirdparty/*</exclude-pattern>
+        <exclude-pattern>*/jquery-changetracker/*</exclude-pattern>
+        <!-- PHP-PEG generated file not intended for human consumption -->
+        <exclude-pattern>*/SSTemplateParser.php$</exclude-pattern>
 
-	<rule ref="Generic.Files.LineEndings.InvalidEOLChar">
-		<severity>7</severity>
-	</rule>
-	<rule ref="Generic.Files.LineEndings">
-		<properties>
-			<property name="eolChar" value="\n" />
-		</properties>
-	</rule>
-	<rule ref="Generic.Files.LineLength.TooLong">
-		<severity>7</severity>
-	</rule>
-	<rule ref="Generic.Files.LineLength">
-		<properties>
-			<property name="lineLimit" value="100"/>
-		</properties>
-	</rule>
-	<rule ref="Generic.Files.LineLength.MaxExceeded">
-		<severity>8</severity>
-	</rule>
-	<rule ref="Generic.Files.LineLength">
-		<properties>
-			<property name="absoluteLineLimit" value="120"/>
-		</properties>
-	</rule>
+        <rule ref="Generic.Files.LineEndings.InvalidEOLChar">
+                <severity>8</severity>
+        </rule>
+        <rule ref="Generic.Files.LineEndings">
+                <properties>
+                        <property name="eolChar" value="\n" />
+                </properties>
+        </rule>
+        <rule ref="Generic.Files.LineLength.TooLong">
+                <severity>7</severity>
+        </rule>
+        <rule ref="Generic.Files.LineLength">
+                <properties>
+                        <property name="lineLimit" value="100"/>
+                </properties>
+        </rule>
+        <rule ref="Generic.Files.LineLength.MaxExceeded">
+                <severity>8</severity>
+        </rule>
+        <rule ref="Generic.Files.LineLength">
+                <properties>
+                        <property name="absoluteLineLimit" value="120"/>
+                </properties>
+        </rule>
 </ruleset>
-
