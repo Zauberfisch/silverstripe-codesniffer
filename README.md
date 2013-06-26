@@ -25,7 +25,7 @@ here: http://pear.php.net/package/PHP_CodeSniffer/download
 
 ## Running the codesniffer
 
-    phpcs --standard=silverstripe-codesniffer/ --tab-width=4  path/to/your/code
+    phpcs --standard=SilverStripe/rulset.xml --tab-width=4  path/to/your/code
 
 NOTE: Beware, running this on a whole silverstripe installation takes to long to
  be worth it. Use it on your mysite module or target specific directories.
